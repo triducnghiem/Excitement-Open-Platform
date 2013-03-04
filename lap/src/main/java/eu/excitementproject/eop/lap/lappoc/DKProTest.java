@@ -17,10 +17,11 @@ import org.apache.uima.analysis_engine.AnalysisEngine;
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import de.tudarmstadt.ukp.dkpro.core.tokit.BreakIteratorSegmenter;
 import static org.uimafit.factory.AnalysisEngineFactory.*;
-import de.tudarmstadt.ukp.dkpro.core.opennlp.OpenNlpPosTagger;
+//import de.tudarmstadt.ukp.dkpro.core.opennlp.OpenNlpPosTagger;
+import de.tudarmstadt.ukp.dkpro.core.mstparser.*; 
 import org.uimafit.component.xwriter.CASDumpWriter;
 import org.uimafit.factory.AggregateBuilder;
-//import de.tudarmstadt.ukp.dkpro.core.treetagger.*; 
+import de.tudarmstadt.ukp.dkpro.core.treetagger.*; 
 
 //import static org.uimafit.pipeline.SimplePipeline.*;
 //import static org.uimafit.factory.TypeSystemDescriptionFactory.*; 
@@ -43,8 +44,9 @@ public class DKProTest {
 //				TextReader.PARAM_PATTERNS, new String[] {"[+]*.txt"});
 		
 		AnalysisEngineDescription seg = createPrimitiveDescription(BreakIteratorSegmenter.class);
-		AnalysisEngineDescription tagger = createPrimitiveDescription(OpenNlpPosTagger.class);
-		//AnalysisEngineDescription lemma = createPrimitiveDescription(TreeTaggerPosLemmaTT4J.class); 
+		//AnalysisEngineDescription tagger = createPrimitiveDescription(OpenNlpPosTagger.class);
+		AnalysisEngineDescription lemma = createPrimitiveDescription(TreeTaggerPosLemmaTT4J.class); 
+		AnalysisEngineDescription parser = createPrimitiveDescription(MSTParser.class); 
 		
 		AnalysisEngineDescription cc = createPrimitiveDescription(
 			         CASDumpWriter.class,
@@ -65,19 +67,21 @@ public class DKProTest {
 		//JCas aJCas = createJCas(typeSystemDescription);
 		
 		JCas tView = aJCas.createView("TextView"); 
+		
+		// This DE will require German models; 
 		tView.setDocumentText("Ich denke, das war ein glueck."); 
 		tView.setDocumentLanguage("DE"); 
 //		tView.setDocumentText("Hmm. This is a text from TView."); 		
 //		tView.setDocumentLanguage("EN"); 
-		aJCas.setDocumentText("When I was young, I wanted to become a sailor."); 
-		aJCas.setDocumentLanguage("EN"); 
+//		aJCas.setDocumentText("When I was young, I wanted to become a sailor."); 
+//		aJCas.setDocumentLanguage("EN"); 
 
 		// Using AggregateBuilder to assign views 
 		AggregateBuilder builder = new AggregateBuilder();
 		builder.add(seg, "_InitialView", "TextView");
-		builder.add(tagger, "_InitialView", "TextView"); 
-		//builder.add(lemma, "_InitialView", "TextView");
-		// we need model ; 
+		//builder.add(tagger, "_InitialView", "TextView"); 
+		builder.add(lemma, "_InitialView", "TextView");
+		builder.add(parser, "_InitialView", "TextView"); 
 		builder.add(cc); 
 		
 		AnalysisEngine textViewAE = builder.createAggregate(); 

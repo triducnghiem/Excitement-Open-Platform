@@ -13,6 +13,16 @@
   	<description>lap</description>
 
 	<repositories>
+	  <repository>
+	    <id>ukp-oss-snapshots</id>
+	    <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-snapshots</url>
+	    <releases>
+	      <enabled>false</enabled>
+	    </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>	  
      	<repository>
        		<id>ukp-oss-releases</id>
 			<name>DKPro repository</name>
@@ -172,6 +182,27 @@
     			de.tudarmstadt.ukp.dkpro.core.stanfordnlp-gpl
     		</artifactId>
     		<version>1.4.0</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+    		<artifactId>
+    			de.tudarmstadt.ukp.dkpro.core.mstparser-asl
+    		</artifactId>
+    		<version>1.5.0-SNAPSHOT</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+    		<artifactId>
+    			de.tudarmstadt.ukp.dkpro.core.mstparser-model-parser-en-default
+    		</artifactId>
+    		<version>20121910.0</version>
+    	</dependency>
+    	<dependency>
+    		<groupId>de.tudarmstadt.ukp.dkpro.core</groupId>
+    		<artifactId>
+    			de.tudarmstadt.ukp.dkpro.core.mstparser-model-parser-de-default
+    		</artifactId>
+    		<version>20130304.0</version>
     	</dependency>
  	</dependencies>
 
