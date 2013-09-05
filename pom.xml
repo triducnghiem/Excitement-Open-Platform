@@ -30,7 +30,8 @@
 		<module>transformations</module>
 		<module>biutee</module>
 		<module>util</module>
-	</modules>
+    <module>fallschool</module>
+  </modules>
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -526,7 +527,7 @@
 			</roles>
 			<timezone>+1</timezone>
 			<properties>
-				<picUrl />
+				<picUrl/>
 			</properties>
 		</developer>
 
