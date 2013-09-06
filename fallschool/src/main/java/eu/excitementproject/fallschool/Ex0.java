@@ -23,7 +23,7 @@ import eu.excitementproject.eop.lap.dkpro.MaltParserEN;
  * @author Gil 
  *
  */
-public class App 
+public class Ex0 
 {
     public static void main( String[] args )
     {
@@ -47,6 +47,7 @@ public class App
         
         // 1) Do pre-processing, via an LAP. 
         // We will learn more about LAPs (Linguistic Analysis Pipeline), in Exercise #1 
+        // Here, it runs one pipeline based on TreeTagger and MaltParser.  
         System.out.println( "Running LAP for the T-H pair." );
         JCas annotated_THpair = null; 
         try {
