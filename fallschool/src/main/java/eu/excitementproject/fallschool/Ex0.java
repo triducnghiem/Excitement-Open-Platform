@@ -51,7 +51,7 @@ public class Ex0
         System.out.println( "Running LAP for the T-H pair." );
         JCas annotated_THpair = null; 
         try {
-        	LAPAccess lap = new MaltParserEN(); // make a new OpenNLP LAP 
+        	LAPAccess lap = new MaltParserEN(); // make a new MaltParser based LAP 
         	annotated_THpair = lap.generateSingleTHPairCAS(text,  hypothesis); // ask it to process this T-H. 
         } catch (LAPException e)
         {

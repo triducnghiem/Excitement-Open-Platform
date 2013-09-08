@@ -20,7 +20,6 @@
 	
 	<section name="BagOfLexesScoring">
 			<property name="WordnetLexicalResource">HYPERNYM,SYNONYM,PART_HOLONYM</property>
-			<property name="VerbOceanLexicalResource">StrongerThan,CanResultIn,Similar</property>
 	</section>
 	
 	<section name="WordnetLexicalResource">
@@ -31,15 +30,9 @@
 			<property name="wordNetFilesPath">/fallschool/resources/eop-resources-1.0.2/ontologies/EnglishWordNet-dict/</property>
 	</section>
 	
-	<section name="VerbOceanLexicalResource">
-			<property name="isCollapsed">true</property>
-			<!-- Please update the file path to VerbOcean -->
-			<property name="verbOceanFilePath">/fallschool/resources/eop-resources-1.0.2/VerbOcean/verbocean.unrefined.2004-05-20.txt</property>
-	</section>
-	
 	<section name="eu.excitementproject.eop.core.MaxEntClassificationEDA">
-		<property name="modelFile">src/main/resources/model/MaxEntClassificationEDAModel_Base+WN+VO_EN</property>
-		<property name="trainDir">/tmp/</property>
+		<property name="modelFile">target/newly_trained_model</property>
+		<property name="trainDir">target/training/</property>
 		<property name="testDir">/tmp/</property>
 		<property name="classifier">10000,1</property>
 		<property name="Components">BagOfWordsScoring,BagOfLemmasScoring,BagOfLexesScoring</property>
