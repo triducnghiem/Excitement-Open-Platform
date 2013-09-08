@@ -20,7 +20,7 @@ import eu.excitementproject.eop.lap.dkpro.MaltParserEN;
 import eu.excitementproject.eop.lap.dkpro.TreeTaggerEN;
 
 /**
- * This heavily commented text + code introduces the Linguistic Analysis Pipeline 
+ * This heavily commented code introduces the Linguistic Analysis Pipeline 
  * (LAP) of EXCITEMENT open platform. Check EX1 exercise sheet first, and proceed 
  * with this example code. 
  * 
@@ -35,7 +35,9 @@ public class EX1 {
     	BasicConfigurator.configure();
     	Logger.getRootLogger().setLevel(Level.WARN);  
 
-    	// ex1_1();   
+    	// remove comments of the following methods one by one, and 
+    	// run it, and read it. 
+       	// ex1_1();   
     	// ex1_2();  
     	// ex1_3();   
     	// ex1_4(); 
