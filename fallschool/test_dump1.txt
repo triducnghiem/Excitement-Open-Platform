@@ -1,0 +1,380 @@
+======== CAS 0 begin ==================================
+
+-------- View _InitialView begin ----------------------------------
+
+DocumentAnnotation
+   sofa: _InitialView
+   begin: 0
+   end: 0
+   language: "x-unspecified"
+
+CAS-Text:
+null
+-------- View _InitialView end ----------------------------------
+
+-------- View TextView begin ----------------------------------
+
+DocumentAnnotation
+   sofa: TextView
+   begin: 0
+   end: 22
+   language: "en"
+
+CAS-Text:
+This is the Text part.
+[This is the Text part.]
+Text
+   sofa: TextView
+   begin: 0
+   end: 22
+[This is the Text part.]
+Sentence
+   sofa: TextView
+   begin: 0
+   end: 22
+[This]
+Lemma
+   sofa: TextView
+   begin: 0
+   end: 4
+   value: "this"
+[This]
+Token
+   sofa: TextView
+   begin: 0
+   end: 4
+   parent: <null>
+   lemma: Lemma
+      sofa: TextView
+      begin: 0
+      end: 4
+      value: "this"
+   stem: <null>
+   pos: POS
+      sofa: TextView
+      begin: 0
+      end: 4
+      PosValue: "DT"
+[This]
+POS
+   sofa: TextView
+   begin: 0
+   end: 4
+   PosValue: "DT"
+[is]
+Lemma
+   sofa: TextView
+   begin: 5
+   end: 7
+   value: "be"
+[is]
+Token
+   sofa: TextView
+   begin: 5
+   end: 7
+   parent: <null>
+   lemma: Lemma
+      sofa: TextView
+      begin: 5
+      end: 7
+      value: "be"
+   stem: <null>
+   pos: POS
+      sofa: TextView
+      begin: 5
+      end: 7
+      PosValue: "VBZ"
+[is]
+POS
+   sofa: TextView
+   begin: 5
+   end: 7
+   PosValue: "VBZ"
+[the]
+Lemma
+   sofa: TextView
+   begin: 8
+   end: 11
+   value: "the"
+[the]
+Token
+   sofa: TextView
+   begin: 8
+   end: 11
+   parent: <null>
+   lemma: Lemma
+      sofa: TextView
+      begin: 8
+      end: 11
+      value: "the"
+   stem: <null>
+   pos: POS
+      sofa: TextView
+      begin: 8
+      end: 11
+      PosValue: "DT"
+[the]
+POS
+   sofa: TextView
+   begin: 8
+   end: 11
+   PosValue: "DT"
+[Text]
+Lemma
+   sofa: TextView
+   begin: 12
+   end: 16
+   value: "text"
+[Text]
+Token
+   sofa: TextView
+   begin: 12
+   end: 16
+   parent: <null>
+   lemma: Lemma
+      sofa: TextView
+      begin: 12
+      end: 16
+      value: "text"
+   stem: <null>
+   pos: POS
+      sofa: TextView
+      begin: 12
+      end: 16
+      PosValue: "NN"
+[Text]
+POS
+   sofa: TextView
+   begin: 12
+   end: 16
+   PosValue: "NN"
+[part]
+Lemma
+   sofa: TextView
+   begin: 17
+   end: 21
+   value: "part"
+[part]
+Token
+   sofa: TextView
+   begin: 17
+   end: 21
+   parent: <null>
+   lemma: Lemma
+      sofa: TextView
+      begin: 17
+      end: 21
+      value: "part"
+   stem: <null>
+   pos: POS
+      sofa: TextView
+      begin: 17
+      end: 21
+      PosValue: "NN"
+[part]
+POS
+   sofa: TextView
+   begin: 17
+   end: 21
+   PosValue: "NN"
+[.]
+Lemma
+   sofa: TextView
+   begin: 21
+   end: 22
+   value: "."
+[.]
+Token
+   sofa: TextView
+   begin: 21
+   end: 22
+   parent: <null>
+   lemma: Lemma
+      sofa: TextView
+      begin: 21
+      end: 22
+      value: "."
+   stem: <null>
+   pos: POS
+      sofa: TextView
+      begin: 21
+      end: 22
+      PosValue: "SENT"
+[.]
+POS
+   sofa: TextView
+   begin: 21
+   end: 22
+   PosValue: "SENT"
+-------- View TextView end ----------------------------------
+
+-------- View HypothesisView begin ----------------------------------
+
+DocumentAnnotation
+   sofa: HypothesisView
+   begin: 0
+   end: 26
+   language: "en"
+
+CAS-Text:
+The Hypothesis comes here.
+[The Hypothesis comes here.]
+Hypothesis
+   sofa: HypothesisView
+   begin: 0
+   end: 26
+[The Hypothesis comes here.]
+Sentence
+   sofa: HypothesisView
+   begin: 0
+   end: 26
+[The]
+Lemma
+   sofa: HypothesisView
+   begin: 0
+   end: 3
+   value: "the"
+[The]
+Token
+   sofa: HypothesisView
+   begin: 0
+   end: 3
+   parent: <null>
+   lemma: Lemma
+      sofa: HypothesisView
+      begin: 0
+      end: 3
+      value: "the"
+   stem: <null>
+   pos: POS
+      sofa: HypothesisView
+      begin: 0
+      end: 3
+      PosValue: "DT"
+[The]
+POS
+   sofa: HypothesisView
+   begin: 0
+   end: 3
+   PosValue: "DT"
+[Hypothesis]
+Lemma
+   sofa: HypothesisView
+   begin: 4
+   end: 14
+   value: "Hypothesis"
+[Hypothesis]
+Token
+   sofa: HypothesisView
+   begin: 4
+   end: 14
+   parent: <null>
+   lemma: Lemma
+      sofa: HypothesisView
+      begin: 4
+      end: 14
+      value: "Hypothesis"
+   stem: <null>
+   pos: POS
+      sofa: HypothesisView
+      begin: 4
+      end: 14
+      PosValue: "NP"
+[Hypothesis]
+POS
+   sofa: HypothesisView
+   begin: 4
+   end: 14
+   PosValue: "NP"
+[comes]
+Lemma
+   sofa: HypothesisView
+   begin: 15
+   end: 20
+   value: "come"
+[comes]
+Token
+   sofa: HypothesisView
+   begin: 15
+   end: 20
+   parent: <null>
+   lemma: Lemma
+      sofa: HypothesisView
+      begin: 15
+      end: 20
+      value: "come"
+   stem: <null>
+   pos: POS
+      sofa: HypothesisView
+      begin: 15
+      end: 20
+      PosValue: "VVZ"
+[comes]
+POS
+   sofa: HypothesisView
+   begin: 15
+   end: 20
+   PosValue: "VVZ"
+[here]
+Lemma
+   sofa: HypothesisView
+   begin: 21
+   end: 25
+   value: "here"
+[here]
+Token
+   sofa: HypothesisView
+   begin: 21
+   end: 25
+   parent: <null>
+   lemma: Lemma
+      sofa: HypothesisView
+      begin: 21
+      end: 25
+      value: "here"
+   stem: <null>
+   pos: POS
+      sofa: HypothesisView
+      begin: 21
+      end: 25
+      PosValue: "RB"
+[here]
+POS
+   sofa: HypothesisView
+   begin: 21
+   end: 25
+   PosValue: "RB"
+[.]
+Lemma
+   sofa: HypothesisView
+   begin: 25
+   end: 26
+   value: "."
+[.]
+Token
+   sofa: HypothesisView
+   begin: 25
+   end: 26
+   parent: <null>
+   lemma: Lemma
+      sofa: HypothesisView
+      begin: 25
+      end: 26
+      value: "."
+   stem: <null>
+   pos: POS
+      sofa: HypothesisView
+      begin: 25
+      end: 26
+      PosValue: "SENT"
+[.]
+POS
+   sofa: HypothesisView
+   begin: 25
+   end: 26
+   PosValue: "SENT"
+-------- View HypothesisView end ----------------------------------
+
+======== CAS 0 end ==================================
+
+
