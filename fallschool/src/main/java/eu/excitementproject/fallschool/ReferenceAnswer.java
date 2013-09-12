@@ -22,6 +22,39 @@ public class ReferenceAnswer {
 	
 	private CAT category;
 	private String referenceAnswer;
+	
+	private String fileId;
 	private String id;
 	
+	public CAT getCategory() {
+		return category;
+	}
+	
+	public void setCategory(String category) {
+		this.category = CAT.valueOf(category);
+	}
+	
+	public String getReferenceAnswer() {
+		return referenceAnswer;
+	}
+	
+	public void setReferenceAnswer(String referenceAnswer) {
+		this.referenceAnswer = referenceAnswer;
+	}
+	
+	public String getFileId() {
+		return fileId;
+	}
+	
+	public void setFileId(String fileId) {
+		this.fileId = fileId;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}		
 }
