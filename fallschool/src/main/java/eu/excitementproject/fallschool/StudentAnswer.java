@@ -23,6 +23,7 @@ public class StudentAnswer {
 	private int count;
 	private String answerMatch;
 	private Accuracy accuracy;
+	private String answerText;
 	
 	public String getId() {
 		return id;
@@ -54,6 +55,14 @@ public class StudentAnswer {
 	
 	public void setAccuracy(String accuracy) {
 		this.accuracy = Accuracy.valueOf(accuracy);
+	}
+
+	public String getAnswerText() {
+		return answerText;
+	}
+
+	public void setAnswerText(String answerText) {
+		this.answerText = answerText;
 	}
 	
 }

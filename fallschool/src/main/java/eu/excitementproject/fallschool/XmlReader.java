@@ -49,7 +49,22 @@ public class XmlReader {
         
         
         //get Student Answers
+        Node studAnswer= doc.getElementsByTagName("studentAnswers").item(0);
+        NodeList studAnswersNodeList=studAnswer.getChildNodes();
+        List<StudentAnswer> sas= new ArrayList<StudentAnswer>();
         
+        for (int i=0; i< studAnswersNodeList.getLength();i++){
+        	Element studA= (Element)studAnswersNodeList.item(i);
+        	StudentAnswer sa=new StudentAnswer();
+        	
+        	sa.setAccuracy(studA.getAttribute("accuracy"));
+        	sa.setId(studA.getAttribute("id"));
+        	sa.setAnswerMatch(studA.getAttribute(""));
+        	sa.setCount(Integer.valueOf(studA.getAttribute("count")));
+        	sa.setAnswerText(studA.getTextContent());
+        	sas.add(sa); //add to the list
+        }
+        qa.setStudentAnswers(sas);
         return qa;        
 	}
 	
